@@ -1,15 +1,15 @@
 ## Documentation
 
-This repository is a part of the ShotGrid Pipeline Toolkit/Unreal integration and contains the source code for SG TK Unreal engine.
+This repository is the Unreal integration into Autodesk's Flow Production Tracking (formerly ShotGrid) Pipeline Toolkit and contains the source code for SG TK (ShotGrid Tank) Unreal engine.
 
-The simplest way to add the ShotGrid Toolkit integration to Unreal is to start from the available standard Shotgrid Toolkit configurations:
-- Default2 SG TK configuration: https://github.com/ue4plugins/tk-config-unreal
-- Basic SG TK configuration: https://github.com/ue4plugins/tk-config-unrealbasic
+The simplest way to add the Flow Production Tracking Toolkit integration to Unreal is to start from the available standard Toolkit configurations:
+- Unreal default2 configuration, based on the Flow Production Tracking Toolkit tk-config-Default2 configuration: https://github.com/ue4plugins/tk-config-unreal
+- Unreal basic configuration, based on the Flow Production Tracking Toolkit tk-config-basic configuration: https://github.com/ue4plugins/tk-config-unrealbasic
 
-However, it is possible to manually add the integration to an existing SG TK configuration from the files provided by the [default2 based Unreal config](https://github.com/ue4plugins/tk-config-unreal) or the [basic based Unreal config](https://github.com/ue4plugins/tk-config-unrealbasic).
+However, it is possible to manually add the integration to an existing Flow Production Tracking configuration from the files provided by the [default2 based Unreal config](https://github.com/ue4plugins/tk-config-unreal) or the [basic based Unreal config](https://github.com/ue4plugins/tk-config-unrealbasic).
 
 ### Configuring the file system schema for a default2 base configuration
-If your SG TK configuration needs a file system schema, copy the following files and directories from `core/schema` of [this config](https://github.com/ue4plugins/tk-config-unreal) under the `core/schema` folder of your existing configuration.
+If your Flow Production Tracking configuration needs a file system schema, copy the following files and directories from `core/schema` of [this config](https://github.com/ue4plugins/tk-config-unreal) under the `core/schema` folder of your existing configuration.
 ```
 schema/
 └── project
@@ -29,8 +29,8 @@ schema/
                 └── placeholder
 ```
 
-### Adding the SG TK Unreal components
-Both configs have a self contained `env/includes/unreal` folder which contains all definitions needed by the integration
+### Adding the Flow Production Tracking Unreal components
+Both configs have a self-contained `env/includes/unreal` folder, which contains all definitions needed by the integration
 ```
 unreal/
 ├── frameworks.yml
@@ -66,5 +66,4 @@ Then the following files (or similar) need to be modified to add the Unreal inte
 
 
 ## See also:
-For more information on how to run the ShotGrid/Unreal integration, please see the [support documentation](https://docs.unrealengine.com/5.0/en-US/using-unreal-engine-with-autodesk-shotgrid/).
-
+For more information on how to run the Unreal Flow Production Tracking integration, please see the [support documentation](https://docs.unrealengine.com/5.0/en-US/using-unreal-engine-with-autodesk-shotgrid/).
